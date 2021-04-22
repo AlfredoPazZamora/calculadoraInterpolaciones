@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpolaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div action="#" class="formulario">
+
+        <fieldset>
+            <legend>Interpolación lineal</legend>
+            <div class="container">
+                <label for="number" class="label">x</label>
+                <input type="number" class="texto" id="x" required>
+
+                <label for="number" class="label">x0</label>
+                <input type="number" class="texto" id="x0" required>
+
+                <label for="number" class="label">x1</label>
+                <input type="number" class="texto" id="x1" required>
+
+                <label for="number" class="label">f(x)0</label>
+                <input type="number" class="texto" id="fx0" required>
+
+                <label for="number" class="label">f(x)1</label>
+                <input type="number" class="texto" id="fx1" required>
+
+                <label for="number" class="label">Resultado f(X)=</label>
+                <div class="texto" id="resultadoLineal" ></div>
+
+                <button class="texto" onclick="interpolacionLineal()">Calcular</button>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interpolación de Cuadrática</legend>
+            <div class="container">
+                <label for="name" class="label">x</label>
+                <input type="text" class="texto" required id='x-c'>
+
+                <label for="name" class="label">x0</label>
+                <input type="text" class="texto" required id='x0-c'>
+
+                <label for="name" class="label">x1</label>
+                <input type="text" class="texto" required id='x1-c'>
+
+                <label for="name" class="label">x2</label>
+                <input type="text" class="texto" required id='x2-c'>
+
+                <label for="name" class="label">f(x)0</label>
+                <input type="text" class="texto" required id='fx0-c'>
+
+                <label for="name" class="label">f(x)1</label>
+                <input type="text" class="texto" required id='fx1-c'>
+
+                <label for="name" class="label">f(x)2</label>
+                <input type="text" class="texto" required id='fx2-c'>
+
+                <label for="name" class="label">Resultado f(x)=</label>
+                <div class="texto" id="resuldatoCuadratica"></div>
+
+                <button class="texto" onclick="interpolacionCuadratica()">Calcular</button>
+            </div>
+        </fieldset>
+  
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
